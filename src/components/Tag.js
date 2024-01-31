@@ -5,7 +5,7 @@ import useGif from "../hooks/useGif";
 
 function Tag() {
 
-    const [tag, setTag] = useState('cat')
+    const [tag, setTag] = useState('')
     const { gif, loading, fetchData } = useGif(tag)
 
     function inputFieldChangeHandler(event) {
@@ -28,7 +28,8 @@ function Tag() {
             type="text"
             value={tag}
             name="tag"
-            onChange={inputFieldChangeHandler} className="w-10/12 text-lg py-2 rounded-lg mb-[3px] text-center"
+            onChange={inputFieldChangeHandler}
+            placeholder="Search For Custom Gifs Here" className="w-10/12 text-lg py-2 rounded-lg mb-[3px] text-center"
         />
         <button
             onClick={clickHandler}
