@@ -1,4 +1,4 @@
-#Gif Generator
+#Learned Custom Hook Creation and Usage
 
 This site generates gifs with one click the memes can be random or desired
 
